@@ -1,0 +1,223 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@font-face{
+	font-family: topH;
+	src: url(../../../fonts/AdineKirnber-Script.ttf);
+}
+
+
+body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	background: #EEE8AA; 
+}
+.top_alignment{	
+	width: 100%;
+	height: 100%;
+	background: url(../../../img/img33.jpg) center no-repeat;
+	-webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+  	background-size: cover;	
+	height: 760px;	
+}
+h1{
+	font-family: topH;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 6em;
+}
+.title_top{
+	margin-top: 65px;
+	display: block;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.cent_align{
+	padding-top: 18%;
+	height: 100%;
+}
+.top_alignment h1{
+	margin-top: 0;
+}
+.cent_align h1, .btn_align{
+	color: white;
+}
+.btn_align{
+	background-color: hsla(0, 5%, 95%, 0.25);
+	display: flex;
+	justify-content: center;
+	margin-left: 45%;
+	margin-right: 45%;
+	height: 50px;
+	border: 5px solid white;
+	-ms-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+-moz-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+-webkit-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+transition: background 0.3s linear 0s, color 0.3s linear 0s;
+}
+.cent_align h1{
+	font-family: topH;
+	background-color: hsla(0, 5%, 95%, 0.55);
+	color: hsla(145, 5%, 35%, 0.76);
+}
+.btn_align b{
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-transform: uppercase;
+}
+.btn_align:hover{
+	background: white;
+	color: black;
+}
+.btn_align a{
+	text-decoration: none;
+	color: black;
+}
+/*Menu*/
+nav#menu {
+	margin-top: 50px;
+	background: #fff;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	z-index:1000;
+}
+#menu li#view{
+	display: none;
+	-ms-transition: display 5s linear 5, ease-in-out;
+	-moz-transition: display 5s linear 5s, ease-in-out;
+	-webkit-transition: display 5s linear 5s, ease-in-out;
+	transition: display 5s linear 5s, ease-in-out;
+}
+nav#menu ul{
+	padding: 0;
+	background: black;
+	margin: 0 auto;
+	display: inline-block;
+	height: 50px;
+}
+nav#menu ul li{
+	float: left;
+	padding: 0 20px;
+	background: white;
+	list-style: none;
+	margin-right: 5px;
+	line-height: 50px;
+	height: 50px;
+	-ms-transition: margin 0.1s ease-in-out;
+	-moz-transition: margin 0.1s ease-in-out;
+	-webkit-transition: margin 0.1s ease-in-out;
+	transition: margin 0.1s ease-in-out;
+}
+nav#menu ul li:nth-child(1){
+	margin-left: 5px;
+}
+nav#menu ul li.active{
+	background: #778899;
+}
+nav#menu ul li a{
+	text-transform: uppercase;
+	color: black;
+	text-decoration: none;
+	font-size: 1.3em;
+	font-family: topH;
+}
+nav#menu li#view{
+	-ms-transition: display 0.1s ease-in-out;
+	-moz-transition: display 0.1s ease-in-out;
+	-webkit-transition: display 0.1s ease-in-out;
+	transition: display 0.1s ease-in-out;
+}
+
+nav#menu.scrolled{
+	margin: 0;
+	background-color: hsla(65, 5%, 5%, 0.76);
+	position: fixed;
+	top: 0;
+}
+#menu.scrolled li#view{
+	display: block;
+}
+nav#menu.scrolled ul li{
+	margin: 0;
+}
+/*end of menu*/
+
+
+/*gallery style layout */
+/*for this gallery all images have to be the same size or the gallery breaks */
+/*This gallery breaks in IE and firefox*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gallery {
+	width: 100%;
+	height: auto;
+	margin-top: -10px;
+}
+
+.gallery li {
+	width: 25%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+.transform {
+	-webkit-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+       -moz-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+	     -o-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+	        transition: all .25s cubic-bezier(.2, .31, .36, 1);
+}
+
+.gallery .a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.gallery img {
+	position: relative;
+    width: auto\9;
+    height: auto;
+    width: 100%;
+    height: 30%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.gallery .info {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	background:  #EEE8AA;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transform: translateZ(0);
+   	        transform: translateZ(0);
+}
+
+.gallery .title {
+	
+	font-weight: bold;
+	font-size: 20px;
+    color: rgb(43, 43, 43);
+    position: relative;
+    top: 43%;
+}
+
+
+

@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+html,body, h1{
+	font-size: 20px !important;
+	font-family: 'Open Sans', sans-serif !important;
+	text-shadow: none !important;
+	margin-top: 0;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+
+
+@media screen and (max-width: 350px){ /*Change up the size for all the headers */
+	/*Iphone 5 capabilities*/
+	header h1{ 
+		margin-top: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+		overflow: visible;
+	}
+}
+/*The above css needs to be reasigned to their respective classes... move away from calling the css states on global objects*/
+form.login1{
+	margin-top: 100px;
+}
+div.front1{
+	margin-top: 100px;
+}
+div.front1 a{
+	text-decoration: none;
+}
+a#sp_submit{
+	text-decoration: none;
+}
+/*#sp_submit button{
+	margin: 0;
+}*/
+div#i_contact{
+	width: 240px !important;
+}
+#i_contact a{
+	text-decoration: none ;
+}
+#i_contact h4,#i_contact h5,#i_contact p,#i_contact address {
+	text-align: center;
+}
+#frgt_psw{
+	margin-right: 20px;
+	float: right;
+}
+.ui-block-b{
+	margin-left: 25%;
+margin-right: 25%;
+}
+.ui-block-a{
+	margin-left: 25%;
+margin-right: 25%;
+}
+
+#indx_head h3{
+	text-align: center;
+	color: #33ccff;
+}
+form.login1{
+	margin-top: 50px ;
+}
+li a img{
+	height: 80px !important;
+
+}
+.uP_UserInfo{
+	border-radius: 0px;
+	border: 0px;
+}
+.p_lbl{
+	margin-top: 20px !important;
+	margin-bottom: 50px !important;
+}
+.index_Text h4{
+	margin-bottom: 0px;
+	text-align: center;
+
+}
+.front1 .ui-block-b{
+	margin-bottom: 10px;
+}
+.pos_main .ui-block-a{
+	margin: 0;
+}
+.pos_main .ui-grid-solo{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 40px;
+}
+.pos_main .ui-grid-solo:first-of-type{
+	margin-top: 50px;
+}
+.pos_main .ui-btn-icon-left{
+	padding-left: 0;
+}
+.pos_main .ui-btn{
+	padding: 30px;
+}
+
+/*New updates 10/10/2014 */
+button, header, a, #sb_quality-button, footer{
+	border: 0px #ffffff !important;
+}
+.ui-input-text{
+	border-style: none;
+}
+#blib{
+	margin-right: 1%;
+	margin-left: 1%;
+}
