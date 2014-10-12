@@ -37,7 +37,7 @@
 			<footer data-role="footer" data-position="fixed">
 				<nav data-role="navbar">
 					<ul>
-						<li><a href="mainScreen.php" data-icon="check" >Submit</a></li>
+						<li><a href="mainScreen.php"><h1>Submit</h1></a></li>
 					</ul>
 					
 				</nav>
