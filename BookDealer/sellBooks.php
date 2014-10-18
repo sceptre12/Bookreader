@@ -36,7 +36,10 @@
 			</div>
 			<footer data-role="footer" data-position="fixed">
 				<nav data-role="navbar">
-					<ul>
+					<div data-role="popup" id="i_fail">
+						<p>Please fill out the form to continue</p>
+						</div>
+					<ul id="vlap">
 						<li><a href="mainScreen.php"><h1>Submit</h1></a></li>
 					</ul>
 					

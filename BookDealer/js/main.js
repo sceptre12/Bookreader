@@ -3,7 +3,7 @@
 
 	refl = reference-link 
 	do = data object
-	fp = focus point
+	fp = index_div.Front1
 	fl = fail link
 	pu = popup 
 	p = pop
@@ -13,6 +13,7 @@
 	sup = signup page
 	sbk = sellbook page
 	csl = document.URL.search
+	dp = 
 */
 // global variables
 
@@ -31,6 +32,7 @@ $(document).ready(function(){
 		refl = 'mainScreen.php', 
 		do1 = false,
 		fp = $('div.front1 a:first'),
+		sp = $('#vlap a:first'),
 		fl = '#i_fail',
 		pu = 'popup',
 		p = 'pop',
@@ -44,6 +46,10 @@ $(document).ready(function(){
 			$(fp).removeAttr('href').removeAttr('data-ajax').attr('href',fl).attr('data-rel',pu).attr('data-transition',p);
 			} else if($(fp).attr('href') === fl){
 				$(fp).removeAttr('href').removeAttr('data-rel').removeAttr('data-transition').attr('href', refl).attr('data-ajax',do1);
+			}else if(document.URL.substring(document.URL.search(sbk), cll) === sbk){
+				if( x === null || x === ""){
+					$(sp).removeAttr('href').attr('href', refl).attr('data-rel', pu).attr('data-transition',p);
+				}
 			}
 		}
 	});

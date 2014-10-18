@@ -80,7 +80,10 @@
 			</div>
 			<footer data-role="footer" data-position="fixed">
 				<nav data-role="navbar">
-					<ul>
+					<ul id="vlap">
+						<div data-role="popup" id="i_fail">
+						<p>Please fill out the form to continue</p>
+						</div>
 						<li><a href="javascript: submitform()" data-icon="check" >Submit</a></li>
 					</ul>
 					
