@@ -16,6 +16,7 @@
 			<header data-role="header">
 				<h1>Welcome</h1>
 			</header>
+			
 			<!-- Logo added here  -->
 			<div data-role="main" class="ui-content">
 				<div id="indx_head">

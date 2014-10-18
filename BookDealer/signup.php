@@ -59,8 +59,7 @@
 					<input type="password" data-clear-btn="true" name="pwd" id="su_pswrd" placeholder="Password" >
 					<label for="su_email">Email:</label>
 					<input type="text" data-clear-btn="true" name="email" id="su_email" placeholder="Email">
-					<!-- <div data-role="fieldcontain"> -->
-						<select name="school_list" class="select" value="Select School">
+					<select name="school_list" class="select" value="Select School">
 						<option value="1">Random School</option>
 						<option value="2">Random School2</option>
 						<option value="3">Random School3</option>
@@ -69,7 +68,6 @@
 						<option value="6">Random School6</option>
 						<option value="7">Random School7</option>
 					</select>
-					<!-- </div>		 -->			
 				</form>
 			</div>
 			<footer data-role="footer" data-position="fixed">
@@ -79,7 +77,7 @@
 					</ul>
 					
 				</nav>
-				<!-- <a href="index.html" data-transition="slide" data-direction="reversed" id="sp_submit"><button data-role="button">Submit</button></a> -->
+				
 			</footer>				
 			
 		</div>
