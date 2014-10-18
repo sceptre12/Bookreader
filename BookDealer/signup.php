@@ -50,18 +50,21 @@
 				<a href="index.php" data-icon="back" data-iconpos="notext" class="ui-nodisc-icon">Back</a>
 			</header>
 			<div data-role="main" class="ui-content">
-				<form>
-					<label for="su_usrname">Username:</label>
-					<input type="text" data-clear-btn="true" name="username" id="su_usrname" placeholder="Username">
-					<label for="su_psrwd">Password:</label>
-					<input type="password" data-clear-btn="true" name="pwd" id="lp_pswrd" placeholder="Password" >
+				<form method="post" action="classes/add-user.php" role="form" target="_self">
+					<label for="username">Username:</label>
+					<input type="text" data-clear-btn="true" name="username" id="username" placeholder="Username" required="">
+					<label for="password">Password:</label>
+					<input type="password" data-clear-btn="true" name="password" id="password" placeholder="Password" required="">
 					<label for="su_psrwd">Confirm Password:</label>
-					<input type="password" data-clear-btn="true" name="pwd" id="su_pswrd" placeholder="Password" >
-					<label for="su_email">Email:</label>
-					<input type="text" data-clear-btn="true" name="email" id="su_email" placeholder="Email">
+					<input type="password" data-clear-btn="true" name="pwd" id="su_pswrd" placeholder="Password" required="">
+					<label for="email">Email:</label>
+
+					<input type="text" data-clear-btn="true" name="email" id="email" placeholder="Email" required="">
+					<input type="text" data-clear-btn="true" name="location" id="location" placeholder="Location" required="">
+
 					<!-- <div data-role="fieldcontain"> -->
-						<select name="school_list" class="select" value="Select School">
-						<option value="1">Random School</option>
+						<select name="location" class="select" value="Select School">
+						<option value="1">RandomSchool</option>
 						<option value="2">Random School2</option>
 						<option value="3">Random School3</option>
 						<option value="4">Random School4</option>
@@ -69,6 +72,8 @@
 						<option value="6">Random School6</option>
 						<option value="7">Random School7</option>
 					</select>
+					<button type = "submit">Submit</button>
+					
 					<!-- </div>		 -->			
 				</form>
 			</div>
