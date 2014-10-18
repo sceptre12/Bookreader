@@ -64,7 +64,7 @@
 					<input type="password" data-clear-btn="true" name="pwd" id="pwd" placeholder="Password" required="">
 					<label for="email">Email:</label>
 
-					<input type="text" data-clear-btn="true" name="email" id="email" placeholder="Email" required="">
+					<input type="text" data-clear-btn="true" name="email" id="email" placeholder="Email" required="email">
 					<input type="text" data-clear-btn="true" name="location" id="location" placeholder="Location" required="">
 						<select name="location" class="select" value="Select School">
 						<option value="1">Random School</option>
