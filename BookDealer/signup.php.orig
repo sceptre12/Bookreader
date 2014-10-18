@@ -65,7 +65,19 @@
 					<label for="email">Email:</label>
 
 					<input type="text" data-clear-btn="true" name="email" id="email" placeholder="Email" required="email">
+<<<<<<< HEAD
 					
+						<select name="location" class="select" value="Select School">
+						<option value="1">Random School</option>
+						<option value="2">Random School2</option>
+						<option value="3">Random School3</option>
+						<option value="4">Random School4</option>
+						<option value="5">Random School5</option>
+						<option value="6">Random School6</option>
+						<option value="7">Random School7</option>
+=======
+					<input type="text" data-clear-btn="true" name="location" id="location" placeholder="Location" required="">
+>>>>>>> cd0f7c3ba793e170ee0394bea37f284f6e6a1c0e
 						<select name="school_list" class="select" value="Select School">
 							<option value="1">Select a School</option>
 						<?php
@@ -76,8 +88,19 @@
 								}
 						?>
 					</select>
+					<footer data-role="footer" data-position="fixed">
+						<nav data-role="navbar">
+							<ul>
+								<li><a href="mainScreen.php"><h1>Submit</h1></a></li>
+							</ul>
+							
+						</nav>
+					</footer>
+					
 				</form>
 			</div>
+<<<<<<< HEAD
+=======
 			<footer data-role="footer" data-position="fixed">
 				<nav data-role="navbar">
 					<ul>
@@ -88,6 +111,7 @@
 				
 			</footer>				
 			
+>>>>>>> cd0f7c3ba793e170ee0394bea37f284f6e6a1c0e
 		</div>
 	</body>
 
