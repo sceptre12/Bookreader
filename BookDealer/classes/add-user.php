@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
 	$newUser = new User;
 	$newUser -> createUser($username, $sha1pass, $email, $location);
 
-	//header("Location:../index.php");
+	header("Location:../index.php");
 }
 else{
 	//X, please make an error page error.php for when users try to sign up and some data is not entered correctly.
