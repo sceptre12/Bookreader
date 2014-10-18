@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div data-role="page" id="info">
-			<div data-role="panel" id="i_contact" data-position="right" data-display="overlay">
+			<div data-role="panel" id="i_contact" data-position="right" data-display="reveal">
 				<header data-role="header">
 					<h1>Logo</h1>
 				</header>
@@ -50,7 +50,7 @@
 				</div>
 			 		<a href="#info" data-rel="close"><button class="ui-btn" >Close</button></a> 	
 			</div>
-			<div data-role="panel" id="i_About" data-position="right" data-display="overlay">
+			<div data-role="panel" id="i_About" data-position="right" data-display="reveal">
 				<header data-role="header">
 					<h1>Logo</h1>
 				</header>
