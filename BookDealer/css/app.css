@@ -11,10 +11,12 @@ form.login1{
 }
 div.front1{
 	margin-top: 100px;
+	
 }
 div.front1 a{
 	text-decoration: none;
 }
+
 a#sp_submit{
 	text-decoration: none;
 }
@@ -122,4 +124,19 @@ button, header, a, #sb_quality-button, footer{
 	header a{
 	margin: .5em 0 !important;
 }
+}
+
+/*Form validations styles*/
+
+#i_fail{
+	/*at greater widths media queries will need to be inserted to make sure the pop up dosent 
+	go over the actuall sign in button*/
+	min-width: 100%;
+	left:21%;
+	right: 25%
+	
+}
+#i_fail p{
+	width: 100%;
+	font-size: 4vw;
 }

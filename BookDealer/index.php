@@ -9,7 +9,7 @@
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/app.css">
-		
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<div data-role="page" id="loginPage">
@@ -23,23 +23,26 @@
 					<h3>Sign In!</h3>
 				</div>
 				<form class="login1" action="" method="post">
-					<!-- <label for="lp_username">Username:</label> -->
 					<input type="text" data-clear-btn="true" name="username" id="lp_username" placeholder="Username">
-					<!-- <label for="lp_psrwd">Password:</label> -->
 					<input type="password" data-clear-btn="true" name="pwd" id="lp_pswrd" placeholder="Password" >
 					<div id="frgt_psw">
 						<a href="forgotpassword.php">Forgot Password?</a>
 					</div>
-					<!-- <fieldset class="ui-grid-a" >
-					 the data-themes are for the styling I'm guessing 
-						<div class="ui-block-a"><input type="submit" name="login" value="Login" data-theme="a"></div>
-						<div class="ui-block-b"><input type="submit" name="signup" value="Login" data-theme="a"></div>
-					</fieldset> -->
 				</form> 
 				<div class="ui-grid-a front1">
 					<!-- When linking the rel="external" should be used when linking to an external site or domain 
 					Use the data-ajax="false" when linking to a page within the same domain -->
-					<div class="ui-block-b "><a  href="mainScreen.php" data-ajax="false" ><div class="button-wrap"><button class="ui-btn ui-corner-all">Sign in</button></a></div></div>
+					<div data-role="popup" id="i_fail">
+						<p>Please fill out the form to continue</p>
+					</div>
+					<div class="ui-block-b "><!--data-rel="popup"  data-transition="pop" href="#i_fail" -->
+						<a href="mainScreen.php" data-ajax="false" >
+							<div class="button-wrap">
+								<button class="ui-btn ui-corner-all">Sign in</button>
+							</div>
+						</a>
+					</div>
+				
 					<div class="index_Text">
 						<h4>Not a Member?</h4>
 					</div>

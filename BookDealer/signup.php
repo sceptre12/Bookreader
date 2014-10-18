@@ -65,7 +65,7 @@
 					<label for="email">Email:</label>
 
 					<input type="text" data-clear-btn="true" name="email" id="email" placeholder="Email" required="email">
-					<input type="text" data-clear-btn="true" name="location" id="location" placeholder="Location" required="">
+					
 						<select name="location" class="select" value="Select School">
 						<option value="1">Random School</option>
 						<option value="2">Random School2</option>
@@ -84,19 +84,17 @@
 								}
 						?>
 					</select>
+					<footer data-role="footer" data-position="fixed">
+						<nav data-role="navbar">
+							<ul>
+								<li><a href="mainScreen.php"><h1>Submit</h1></a></li>
+							</ul>
+							
+						</nav>
+					</footer>
+					
 				</form>
 			</div>
-			<footer data-role="footer" data-position="fixed">
-				<nav data-role="navbar">
-					<ul>
-						<li><a href="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" data-icon="check" >Submit</a></li>
-					</ul>
-					
-				</nav>
-				
-			</footer>				
-			
 		</div>
-		
 	</body>
 </html>

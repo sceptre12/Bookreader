@@ -1,16 +1,61 @@
+/*
+	Variables Main def
+
+	ml = main-link 
+	do = data object
+	fp = focus point
+	fl = fail link
+	pu = popup 
+	p = pop
+	cl = current link
+	cll = current link length
+	dex = index page
+	sup = signup page
+	sbk = sellbook page
+	csl = document.URL.search
+*/
+// global variables
+
+
+
 $(document).ready(function(){
 	$('ul.ui-listview a').attr('id','img_Select');
 
 
 	$('#img_Select img').each(function(index, element){
 		element.id='img_idNum' + (index + 1);
-});
+	});
+	$('button').click(function(){
+		// This function prevents the page from loading and it also brings up the pop up box
+		var x = $('input').val(), 
+		ml = 'mainScreen.php', 
+		do1 = false,
+		fp = $('div.front1 a:first'),
+		fl = '#i_fail',
+		pu = 'popup',
+		p = 'pop',
+		dex = 'index.php',
+		sup = 'signup.php',
+		sbk = 'sellBooks.php',
+		cll = document.URL.length,
+		
+		if(document.URL.substring(document.URL.search(dex), cll) === dex){
+			if( x === null || x === ""){
+			$(fp).removeAttr('href').removeAttr('data-ajax').attr('href',fl).attr('data-rel',pu).attr('data-transition',p);
+			} else if($(fp).attr('href') === fl){
+				$(fp).removeAttr('href').removeAttr('data-rel').removeAttr('data-transition').attr('href', ml).attr('data-ajax',do1);
+			}
+		}
+	});
 });
 
+
 // Creating the js for checking to see if the user input the right information 
-// $('button').click(function(){
-// var x = $('input').val();
-// if( x === null || x === ''){
-// alert('feilds are empty');
-// return false;
-// } });
+
+
+// This prevents the user from leaving page 
+
+// $(document).bind("preventbeforechange", function( event, ui){
+//     event.preventDefault();
+//     data.deferred.reject( data.absUrl, data.options );
+// });
