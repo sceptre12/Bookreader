@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+		mysql_connect("localhost", "root", "blackbox0");
+		mysql_select_db("BookDealer");
+		$result = mysql_query("select * from Schools");
+?>
+
+
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -64,15 +71,23 @@
 
 					<!-- <div data-role="fieldcontain"> -->
 						<select name="location" class="select" value="Select School">
-						<option value="1">RandomSchool</option>
+						<option value="1">Random School</option>
 						<option value="2">Random School2</option>
 						<option value="3">Random School3</option>
 						<option value="4">Random School4</option>
 						<option value="5">Random School5</option>
 						<option value="6">Random School6</option>
 						<option value="7">Random School7</option>
+						<select name="school_list" class="select" value="Select School">
+							<option value="1">Select a School</option>
+						<?php
+								$count=1;
+								while ($row = mysql_fetch_object($result)) {
+									$count++;			
+									print "<option value='$count'>".$row->name."</option>>".PHP_EOL;
+								}
+						?>
 					</select>
-					<button type = "submit">Submit</button>
 					
 					<!-- </div>		 -->			
 				</form>
@@ -80,7 +95,7 @@
 			<footer data-role="footer" data-position="fixed">
 				<nav data-role="navbar">
 					<ul>
-						<li><a href="index.php" data-icon="check" >Submit</a></li>
+						<li><a href="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" data-icon="check" >Submit</a></li>
 					</ul>
 					
 				</nav>
@@ -88,7 +103,6 @@
 			</footer>				
 			
 		</div>
-		
 		
 	</body>
 </html>
