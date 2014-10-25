@@ -10,10 +10,10 @@
 		<meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1"/>
 		<title>App</title>
 
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/Blue.min.css">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/purple.min.css">
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/app.css">
 		<script type="text/javascript">
 		// Attach the external college list file
@@ -52,7 +52,7 @@
 		<div data-role="page" id="sp_Main">
 			<header data-role="header">
 				<h1>Sign Up</h1>
-				<a href="index.php" data-icon="back" data-iconpos="notext" class="ui-nodisc-icon">Back</a>
+				<a href="index.php" data-icon="back" data-iconpos="notext" class="ui-nodisc-icon transparentIcon">Back</a>
 			</header>
 			<div data-role="main" class="ui-content">
 				<form name="signupform" method="post" action="classes/add-user.php" role="form" target="_self">
@@ -66,7 +66,7 @@
 
 					<input type="text" data-clear-btn="true" name="email" id="email" placeholder="Email" required="email">
 					
-						<select name="school_list" class="select" value="Select School">
+						<select name="school_list" class="select" value="Select School" >
 							<option value="1">Select a School</option>
 						<?php
 								$count=1;
@@ -76,9 +76,13 @@
 								}
 						?>
 					</select>
+					<div class="sell_btnpos">
+						<button type="submit" data-mini="false">Submit</button>
+					</div>
 				</form>
 			</div>
-			<footer data-role="footer" data-position="fixed">
+			<!-- I'm taking this part out please add what needs to be added to the button in the form -->
+			<!-- <footer data-role="footer" data-position="fixed">
 				<nav data-role="navbar">
 					<ul id="vlap">
 						<div data-role="popup" id="i_fail">
@@ -89,15 +93,16 @@
 					
 				</nav>
 				
-			</footer>				
+			</footer>	 -->			
 			
 		</div>
 	</body>
 
 <script type="text/javascript">
-	function submitform(){
-		document.signupform.submit();
-	}
+// this js might not be needed 
+	// function submitform(){
+	// 	document.signupform.submit();
+	// }
 </script>
 
 

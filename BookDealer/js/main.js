@@ -16,9 +16,6 @@
 	dp = 
 */
 // global variables
-
-
-
 $(document).ready(function(){
 	$('ul.ui-listview a').attr('id','img_Select');
 
@@ -40,44 +37,33 @@ $(document).ready(function(){
 		sup = 'signup.php',
 		sbk = 'sellBooks.php',
 		cll = document.URL.length;
-
-		var isEmpty = function check(){
-			var i = 0;
-			var a = $('input')
-			var a = false;
-			while(i != $('input').length){
-				if(a[i].value === ""){
-					a = true;
+		function check(){
+		var i = 0, a = $('input').length, b = true, c = $('input');
+			while(a--){
+				if(c[i].value === "" || c[i].value === null){
+					b = false;
 				}
 				i++;
 			}
-			return a;
+			 return b;
 		}
-
- // x === null || x === ""
+ 		// The second if statment is to be used for another page
+ 		// these if statments alse need to have a required validation 
 		if(document.URL.substring(document.URL.search(dex), cll) === dex){
-			if(isEmpty){
+			if(!check()){
 			$(fp).removeAttr('href').removeAttr('data-ajax').attr('href',fl).attr('data-rel',pu).attr('data-transition',p);
 			} else if($(fp).attr('href') === fl){
 				$(fp).removeAttr('href').removeAttr('data-rel').removeAttr('data-transition').attr('href', refl).attr('data-ajax',do1);
 			}
-		}else if(document.URL.substring(document.URL.search(sbk), cll) === sbk){
-				if(isEmpty){
-					$(sp).removeAttr('href').attr('href', fl).attr('data-rel', pu).attr('data-transition',p);
-				}else if($(sp).attr('href') === fl){
-					$(sp).removeAttr('href').removeAttr('data-rel').removeAttr('data-transition').attr('href', refl);
-				}
-			}
+		}
+		// else if(document.URL.substring(document.URL.search(sbk), cll) === sbk){
+		// 		if(!check()){
+		// 			$(sp).removeAttr('href').attr('href', fl).attr('data-rel', pu).attr('data-transition',p);
+		// 		}else if($(sp).attr('href') === fl){
+		// 			$(sp).removeAttr('href').removeAttr('data-rel').removeAttr('data-transition').attr('href', refl);
+		// 		}
+		// 	}
 	});
 });
 
 
-// Creating the js for checking to see if the user input the right information 
-
-
-// This prevents the user from leaving page 
-
-// $(document).bind("preventbeforechange", function( event, ui){
-//     event.preventDefault();
-//     data.deferred.reject( data.absUrl, data.options );
-// });

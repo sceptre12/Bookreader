@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>App</title>
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/Blue.min.css">
+		<title>App</title>		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/purple.min.css">
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/app.css">
 		<meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1"/>
 	</head>
@@ -15,7 +15,7 @@
 			<header data-role="header">
 				<h1>Home Screen</h1>
 				
-				<a href="#info" data-icon="gear" data-iconpos="notext" class="ui-btn-right ui-nodisc-icon ui-icon-delete">Contact Us</a>
+				<a href="#info" data-icon="gear" data-iconpos="notext" class="ui-btn-right ui-nodisc-icon ui-icon-delete transparentIcon">Contact Us</a>
 			</header>
 			<div data-role="main" class="ui-content pos_main">
 					<div class="ui-grid-solo">
@@ -55,14 +55,12 @@
 					<h1>Logo</h1>
 				</header>
 				<div data-role="main" class="ui-content">
-					
-
 				</div>
 			 		<a href="#info" data-rel="close"><button class="ui-btn" >Close</button></a> 	
 			</div>
 			<header data-role="header" >
 				<h1>Help</h1>
-				<a href="#MainScreen" data-icon="back" data-iconpos="notext" class="ui-nodisc-icon">Back</a>
+				<a href="#MainScreen" data-icon="back" data-iconpos="notext" class="ui-nodisc-icon transparentIcon">Back</a>
 			</header>
 			<div data-role="main" class="ui-content">
 				<ul data-role="listview">

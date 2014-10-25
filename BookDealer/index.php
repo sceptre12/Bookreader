@@ -4,10 +4,10 @@
 		<meta charset="utf-8" />
 		<title>App</title>
 
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/Blue.min.css">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/purple.min.css">
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/app.css">
 		<script src="js/main.js"></script>
 	</head>
@@ -23,8 +23,8 @@
 					<h3>Sign In!</h3>
 				</div>
 				<form class="login1" action="" method="post">
-					<input type="text" data-clear-btn="true" name="username" id="lp_username" placeholder="Username">
-					<input type="password" data-clear-btn="true" name="pwd" id="lp_pswrd" placeholder="Password" >
+					<input type="text" data-clear-btn="true" name="username" id="lp_username" placeholder="Username" required="">
+					<input type="password" data-clear-btn="true" name="pwd" id="lp_pswrd" placeholder="Password" required="">
 					<div id="frgt_psw">
 						<a href="forgotpassword.php">Forgot Password?</a>
 					</div>
