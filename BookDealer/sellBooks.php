@@ -8,6 +8,7 @@
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<script src="js/main.js"></script>
 		<meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1"/>
 	</head>
 	<body>
