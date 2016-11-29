@@ -1,4 +1,4 @@
-Bookreader
+Bookreader (Project)
 ==========
 
 BookWebApp
